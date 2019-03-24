@@ -23,23 +23,29 @@ quick-start guide to the language.
 Real Python
 ~~~~~~~~~~~
 
-Real Python is a repository of free and in-depth Python tutorials created by a diverse team of professional Python developers. At Real Python you can learn all things Python from the ground up. Everything from the absolute basics of Python, to web development and web scraping, to data visualization, and beyond.
+Real Python is a repository of free and in-depth Python tutorials created by a
+diverse team of professional Python developers. At Real Python you can learn
+all things Python from the ground up. Everything from the absolute basics of
+Python, to web development and web scraping, to data visualization, and beyond.
 
     `Real Python <https://realpython.com/>`_
 
 Python Basics
 ~~~~~~~~~~~~~
 
-pythonbasics.org is an introductiory tutorial for beginners. The tutorial includes exercises. It covers the basics and there are also in-depth lessons like object oriented programming and regular expressions.
+pythonbasics.org is an introductiory tutorial for beginners. The tutorial
+includes exercises. It covers the basics and there are also in-depth lessons
+like object oriented programming and regular expressions.
 
    `Python basics <https://pythonbasics.org/>`_
 
 Python for Beginners
 ~~~~~~~~~~~~~~~~~~~~
 
-thepythonguru.com is a tutorial focused on beginner programmers. It covers many Python concepts
-in depth. It also teaches you some advanced constructs of Python like lambda expressions and regular expressions.
-And last it finishes off with the tutorial "How to access MySQL db using Python"
+thepythonguru.com is a tutorial focused on beginner programmers. It covers
+many Python concepts in depth. It also teaches you some advanced constructs
+of Python like lambda expressions and regular expressions. And last it
+finishes off with the tutorial "How to access MySQL db using Python"
 
    `Python for Beginners <https://thepythonguru.com/>`_
 
@@ -143,8 +149,8 @@ author weaves in various design patterns and best practices.
 
 The book also includes several case studies which have the reader explore the
 topics discussed in the book in greater detail by applying those topics to
-real-world examples. Case studies include assignments in GUI programming and Markov
-Analysis.
+real-world examples. Case studies include assignments in GUI programming and
+Markov Analysis.
 
     `Think Python <http://greenteapress.com/thinkpython/html/index.html>`_
 
@@ -181,10 +187,11 @@ no previous programming experience.
 Computer Science Path on Codecademy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Codeacademy course for the absolute Python beginner. This free and interactive 
-course provides and teaches the basics (and beyond) of Python programming while 
-testing the user's knowledge in between progress.
-This course also features a built-in interpreter for receiving instant feedback on your learning.
+A Codeacademy course for the absolute Python beginner. This free and
+interactive course provides and teaches the basics (and beyond) of Python
+programming while testing the user's knowledge in between progress.
+This course also features a built-in interpreter for receiving instant
+feedback on your learning.
 
     `Computer Science Path on Codecademy <https://www.codecademy.com/learn/paths/computer-science>`_
 
@@ -208,9 +215,10 @@ Intermediate
 Python Tricks: The Book
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Discover Python's best practices with simple examples and start writing even more beautiful + Pythonic code. *Python Tricks: The Book* shows you exactly how.
-
-You’ll master intermediate and advanced-level features in Python with practical examples and a clear narrative.
+Discover Python's best practices with simple examples and start writing even
+more beautiful + Pythonic code. *Python Tricks: The Book* shows you exactly
+how. You’ll master intermediate and advanced-level features in Python with
+practical examples and a clear narrative.
 
     `Python Tricks: The Book <https://realpython.com/products/python-tricks-book/>`_
 
@@ -259,9 +267,10 @@ development, version control, optimization, and profiling.
 A Guide to Python's Magic Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is a collection of blog posts by Rafe Kettler which explain 'magic methods'
-in Python. Magic methods are surrounded by double underscores (i.e. __init__)
-and can make classes and objects behave in different and magical ways.
+This is a collection of blog posts by Rafe Kettler which explain 'magic
+methods' in Python. Magic methods are surrounded by double underscores
+(i.e. __init__) and can make classes and objects behave in different and
+magical ways.
 
     `A Guide to Python's Magic Methods <http://www.rafekettler.com/magicmethods.html>`_
 
@@ -319,9 +328,10 @@ how to implement the algorithms in Python.
 Transforming Code into Beautiful, Idiomatic Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Transforming Code into Beautiful, Idiomatic Python is a video by Raymond Hettinger.
-Learn to take better advantage of Python's best features and improve existing code
-through a series of code transformations: "When you see this, do that instead."
+Transforming Code into Beautiful, Idiomatic Python is a video by Raymond
+Hettinger. Learn to take better advantage of Python's best features and
+improve existing code through a series of code transformations: "When you see
+this, do that instead."
 
     `Transforming Code into Beautiful, Idiomatic Python <https://www.youtube.com/watch?v=OSGv2VnC0go>`_
 
@@ -330,13 +340,9 @@ Fullstack Python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Fullstack Python offers a complete top-to-bottom resource for web development
-using Python.
-
-From setting up the web server, to designing the front-end, choosing a database,
-optimizing/scaling, etc.
-
-As the name suggests, it covers everything you need to build and run a complete
-web app from scratch.
+using Python. From setting up the web server, to designing the front-end
+choosing a database, optimizing/scaling, etc. As the name suggests, it covers
+everything you need to build and run a complete web app from scratch.
 
     `Fullstack Python <https://www.fullstackpython.com>`_
 
@@ -344,7 +350,10 @@ web app from scratch.
 PythonistaCafe
 ~~~~~~~~~~~~~~
 
-PythonistaCafe is an invite-only, online community of Python and software development enthusiasts helping each other succeed and grow. Think of it as a club of mutual improvement for Pythonistas where a broad range of programming questions, career advice, and other topics are discussed every day.
+PythonistaCafe is an invite-only, online community of Python and software
+development enthusiasts helping each other succeed and grow. Think of it as a
+club of mutual improvement for Pythonistas where a broad range of programming
+questions, career advice, and other topics are discussed every day.
 
     `PythonistaCafe <https://www.pythonistacafe.com>`_
 
@@ -373,9 +382,10 @@ of the language.
 Python Essential Reference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Python Essential Reference, written by David Beazley, is the definitive reference
-guide to Python. It concisely explains both the core language and the most essential
-parts of the standard library. It covers Python 3 and 2.6 versions.
+Python Essential Reference, written by David Beazley, is the definitive
+reference guide to Python. It concisely explains both the core language
+and the most essential parts of the standard library. It covers Python 3
+and 2.6 versions.
 
     `Python Essential Reference <http://www.dabeaz.com/per.html>`_
 
@@ -407,6 +417,6 @@ some commonly used piece of code, followed by an explanation of why the idiom
 is important. It also contains two code samples for each idiom: the "Harmful"
 way to write it and the "Idiomatic" way.
 
-	`For Python 2.7.3+ <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5KG0F8/>`_
+    `For Python 2.7.3+ <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5KG0F8/>`_
 
-	`For Python 3.3+  <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_
+    `For Python 3.3+  <https://www.amazon.com/Writing-Idiomatic-Python-Jeff-Knupp-ebook/dp/B00B5VXMRG/>`_

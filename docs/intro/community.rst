@@ -12,8 +12,8 @@ The Community
 BDFL
 ****
 
-Guido van Rossum, the creator of Python, is often referred to as the BDFL — the
-Benevolent Dictator For Life.
+Guido van Rossum, the creator of Python, is often referred to as the BDFL
+— the Benevolent Dictator For Life.
 
 
 **************************
@@ -32,8 +32,8 @@ growth of a diverse and international community of Python programmers.
 PEPs
 ****
 
-PEPs are *Python Enhancement Proposals*. They describe changes to Python itself,
-or the standards around it.
+PEPs are *Python Enhancement Proposals*. They describe changes to Python
+itself, or the standards around it.
 
 There are three different types of PEPs (as defined by :pep:`1`):
 
@@ -101,15 +101,16 @@ Online Communities
 ******************
 
 `PythonistaCafe <https://www.pythonistacafe.com>`_ is an invite-only, online community
-of Python and software development enthusiasts helping each other succeed and grow.
-Think of it as a club of mutual improvement for Pythonistas where a broad range of
-programming questions, career advice, and other topics are discussed every day.
+of Python and software development enthusiasts helping each other succeed and
+grow. Think of it as a club of mutual improvement for Pythonistas where a
+broad range of programming questions, career advice, and other topics are
+discussed every day.
 
 
 *****************
 Python Job Boards
 *****************
 
-`Python Jobs HQ <https://www.pythonjobshq.com>`_ is a Python job board, by Python Developers
-for Python Developers. The site aggregates Python job postings from across the web and
-also allows employers to post Python job openings directly on the site.
+`Python Jobs HQ <https://www.pythonjobshq.com>`_ is a Python job board, by Python Developers for Python Developers. The site aggregates Python job
+postings from across the web and also allows employers to post Python job
+openings directly on the site.

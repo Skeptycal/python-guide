@@ -43,7 +43,7 @@ errors and PEP8 compliance. Luckily pycodestyle_ and Pyflakes_ will do this
 for you. If your Vim is compiled with ``+python`` you can also utilize some
 very handy plugins to do these checks from within the editor.
 
-For PEP8 checking and pyflakes, you can install vim-flake8_. Now you can map the
+For PEP8 checking and pyflakes, you can install vim-flake8_. You can map the
 function ``Flake8`` to any hotkey or action you want in Vim. The plugin will
 display errors at the bottom of the screen, and provide an easy way to jump to
 the corresponding line. It's very handy to call this function whenever you save
@@ -70,7 +70,8 @@ Python-mode
 Python-mode_ is a complex solution for working with Python code in Vim.
 It has:
 
-- Asynchronous Python code checking (``pylint``, ``pyflakes``, ``pycodestyle``, ``mccabe``) in any combination
+- Asynchronous Python code checking (``pylint``, ``pyflakes``,
+  ``pycodestyle``, ``mccabe``) in any combination
 - Code refactoring and autocompletion with Rope
 - Fast Python folding
 - Virtualenv support
@@ -156,8 +157,10 @@ Python (on Visual Studio Code)
 ------------------------------
 
 `Python for Visual Studio <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_ is an extension for the `Visual Studio Code IDE <https://code.visualstudio.com>`_.
-This is a free, lightweight, open source IDE, with support for Mac, Windows, and Linux.
-Built using open source technologies such as Node.js and Python, with compelling features such as Intellisense (autocompletion), local and remote debugging, linting, and the like.
+This is a free, lightweight, open source IDE, with support for Mac, Windows,
+and Linux. It is built using open source technologies such as Node.js and
+Python, with compelling features such as Intellisense (autocompletion), local
+and remote debugging, linting, and the like.
 
 MIT licensed.
 
@@ -239,7 +242,10 @@ Interpreter Tools
 Virtual Environments
 --------------------
 
-Virtual Environments provide a powerful way to isolate project package dependencies. This means that you can use packages particular to a Python project without installing them system wide and thus avoiding potential version conflicts.
+Virtual Environments provide a powerful way to isolate project package
+dependencies. This means that you can use packages particular to a Python
+project without installing them system wide and thus avoiding potential
+version conflicts.
 
 To start using and see more information:
 `Virtual Environments <https://github.com/kennethreitz/python-guide/blob/master/docs/dev/virtualenvs.rst>`_ docs.
@@ -276,10 +282,10 @@ IDLE
 ----
 
 :ref:`IDLE <python:idle>` is an integrated development environment that is
-part of the Python standard distribution. It is completely written in Python and uses
-the Tkinter GUI toolkit. Though IDLE is not suited for full-blown development
-using Python, it is quite helpful to try out small Python snippets and
-experiment with different features in Python.
+part of the Python standard distribution. It is completely written in Python
+and uses the Tkinter GUI toolkit. Though IDLE is not suited for full-blown
+development using Python, it is quite helpful to try out small Python
+snippets and experiment with different features in Python.
 
 It provides the following features:
 
@@ -305,7 +311,8 @@ most out of using Python interactively. Its main components are:
 
     $ pip install ipython
 
-To download and install IPython with all its optional dependencies for the notebook, qtconsole, tests, and other functionalities:
+To download and install IPython with all its optional dependencies for the
+notebook, qtconsole, tests, and other functionalities:
 
 .. code-block:: console
 
