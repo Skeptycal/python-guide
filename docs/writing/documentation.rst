@@ -1,5 +1,8 @@
+
+
+#############
 Documentation
-=============
+#############
 
 .. image:: /_static/photos/35620636012_f66aa88f93_k_d.jpg
 
@@ -7,8 +10,10 @@ Readability is a primary focus for Python developers, in both project
 and code documentation. Following some simple best practices can save
 both you and others a lot of time.
 
+
+*********************
 Project Documentation
----------------------
+*********************
 
 A :file:`README` file at the root directory should give general information
 to both users and maintainers of a project. It should be raw text or
@@ -20,7 +25,7 @@ information. This file is the main entry point for readers of the code.
 
 An :file:`INSTALL` file is less necessary with Python.  The installation
 instructions are often reduced to one command, such as ``pip install
-module`` or ``python setup.py install`` and added to the :file:`README`
+module`` or ``python setup.py install``, and added to the :file:`README`
 file.
 
 A :file:`LICENSE` file should *always* be present and specify the license
@@ -32,8 +37,10 @@ planned development for the code.
 A :file:`CHANGELOG` file or section in :file:`README` should compile a short
 overview of the changes in the code base for the latest versions.
 
+
+*******************
 Project Publication
--------------------
+*******************
 
 Depending on the project, your documentation might include some or all
 of the following components:
@@ -68,7 +75,7 @@ your source repository so that rebuilding your documentation will
 happen automatically.
 
 When run, Sphinx_ will import your code and using Python's introspection
-features it will extract all function, method and class signatures. It will
+features it will extract all function, method, and class signatures. It will
 also extract the accompanying docstrings, and compile it all into well
 structured and easily readable documentation for your project.
 
@@ -97,8 +104,9 @@ Reference`_ should help you familiarize yourself with its syntax.
 .. _reStructuredText Quick Reference: http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 
+*************************
 Code Documentation Advice
--------------------------
+*************************
 
 Comments clarify the code and they are added with purpose of making the
 code easier to understand. In Python, comments begin with a hash
@@ -174,7 +182,7 @@ comment block is a programmer's note. The docstring describes the
 
 Unlike block comments, docstrings are built into the Python language itself.
 This means you can use all of Python's powerful introspection capabilities to
-access docstrings at runtime, compared with comments which are optimised out.
+access docstrings at runtime, compared with comments which are optimized out.
 Docstrings are accessible from both the `__doc__` dunder attribute for almost
 every Python object, as well as with the built in `help()` function.
 
@@ -207,7 +215,7 @@ more information about a function, what it does, any exceptions it may raise,
 what it returns, or relevant details about the parameters.
 
 For more detailed documentation of code a popular style is the one used for the
-Numpy project, often called `Numpy style`_ docstrings. While it can take up more
+NumPy project, often called `NumPy style`_ docstrings. While it can take up more
 lines than the previous example, it allows the developer to include a lot
 more information about a method, function, or class. ::
 
@@ -237,8 +245,8 @@ docstrings, making it easy to incorporate NumPy style docstrings into your
 project.
 
 At the end of the day, it doesn't really matter what style is used for writing
-docstrings, their purpose is to serve as documentation for anyone who may need
-to read or make changes to your code. As long as it is correct, understandable
+docstrings; their purpose is to serve as documentation for anyone who may need
+to read or make changes to your code. As long as it is correct, understandable,
 and gets the relevant points across then it has done the job it was designed to
 do.
 
@@ -249,8 +257,10 @@ For further reading on docstrings, feel free to consult :pep:`257`
 .. _sphinx.ext.napoleon: https://sphinxcontrib-napoleon.readthedocs.io/
 .. _`NumPy style`: http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_numpy.html
 
+
+***********
 Other Tools
------------
+***********
 
 You might see these in the wild. Use :ref:`sphinx-ref`.
 

@@ -1,8 +1,9 @@
 .. _freezing-your-code-ref:
 
-==================
+
+##################
 Freezing Your Code
-==================
+##################
 
 .. image:: /_static/photos/33907151034_e0a9e53402_k_d.jpg
 
@@ -22,12 +23,14 @@ Besides, end-user software should always be in an executable format. Files
 ending in ``.py`` are for software engineers and system administrators.
 
 One disadvantage of freezing is that it will increase the size of your
-distribution by about 2–12MB. Also, you will be responsible for shipping
+distribution by about 2–12 MB. Also, you will be responsible for shipping
 updated versions of your application when security vulnerabilities to
 Python are patched.
 
+
+************************
 Alternatives to Freezing
-------------------------
+************************
 
 :ref:`Packaging your code <packaging-your-code-ref>` is for distributing
 libraries or tools to other developers.
@@ -39,8 +42,9 @@ On Linux, an alternative to freezing is to
 .. todo:: Fill in "Freezing Your Code" stub
 
 
+****************************
 Comparison of Freezing Tools
-----------------------------
+****************************
 
 Solutions and platforms/features supported:
 
@@ -56,16 +60,18 @@ py2app      no      no    yes  yes      MIT     no            yes            yes
 
 .. note::
     Freezing Python code on Linux into a Windows executable was only once
-    supported in PyInstaller `and later dropped.
-    <http://stackoverflow.com/questions/2950971/cross-compiling-a-python-script-on-linux-into-a-windows-executable#comment11890276_2951046>`_.
+    supported in PyInstaller `and later dropped
+    <https://stackoverflow.com/questions/2950971/cross-compiling-a-python-script-on-linux-into-a-windows-executable#comment11890276_2951046>`_.
 
 .. note::
-    All solutions need MS Visual C++ dll to be installed on target machine, except py2app.
-    Only Pyinstaller makes self-executable exe that bundles the dll when
+    All solutions need a Microsoft Visual C++ to be installed on the target machine, except py2app.
+    Only PyInstaller makes a self-executable exe that bundles the appropriate DLL when
     passing ``--onefile`` to :file:`Configure.py`.
 
+
+*******
 Windows
--------
+*******
 
 bbFreeze
 ~~~~~~~~
@@ -91,7 +97,7 @@ Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Wi
 .. note::
 
     This will work for the most basic one file scripts. For more advanced freezing you will have to provide
-    include and exclude paths like so
+    include and exclude paths like so:
 
     .. code-block:: python
 
@@ -103,8 +109,8 @@ Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Wi
 
     freezer.setIcon('my_awesome_icon.ico')
 
-4. Provide the Microsoft Visual C runtime DLL for the freezer. It might be possible to append your :code:`sys.path`
-with Microsoft Visual Studio path but I find it easier to drop :file:`msvcp90.dll` in the same folder where your script
+4. Provide the Microsoft Visual C++ runtime DLL for the freezer. It might be possible to append your :code:`sys.path`
+with the Microsoft Visual Studio path but I find it easier to drop :file:`msvcp90.dll` in the same folder where your script
 resides.
 
 5. Freeze!
@@ -116,7 +122,7 @@ resides.
 py2exe
 ~~~~~~
 
-Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last release of py2exe is from the year 2014. There is not active development. 
+Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last release of py2exe is from the year 2014. There is not active development.
 
 1. Download and install http://sourceforge.net/projects/py2exe/files/py2exe/
 
@@ -133,7 +139,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last 
 
 3. (Optionally) `include icon <http://www.py2exe.org/index.cgi/CustomIcons>`_
 
-4. (Optionally) `one-file mode <http://stackoverflow.com/questions/112698/py2exe-generate-single-executable-file#113014>`_
+4. (Optionally) `one-file mode <https://stackoverflow.com/questions/112698/py2exe-generate-single-executable-file#113014>`_
 
 5. Generate :file:`.exe` into :file:`dist` directory:
 
@@ -141,7 +147,7 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last 
 
    $ python setup.py py2exe
 
-6. Provide the Microsoft Visual C runtime DLL. Two options: `globally install dll on target machine <https://www.microsoft.com/en-us/download/details.aspx?id=29>`_ or `distribute dll alongside with .exe <http://www.py2exe.org/index.cgi/Tutorial#Step52>`_.
+6. Provide the Microsoft Visual C++ runtime DLL. Two options: `globally install dll on target machine <https://www.microsoft.com/en-us/download/details.aspx?id=29>`_ or `distribute dll alongside with .exe <http://www.py2exe.org/index.cgi/Tutorial#Step52>`_.
 
 PyInstaller
 ~~~~~~~~~~~
@@ -152,8 +158,9 @@ Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependenc
 - `Manual <https://pyinstaller.readthedocs.io/en/stable/>`_
 
 
+****
 OS X
-----
+****
 
 
 py2app
@@ -176,19 +183,19 @@ To create a standard Unix executable, from say :code:`script.py`, use:
 
  $ pyinstaller script.py
 
-This creates,
+This creates:
 
 - a :code:`script.spec` file, analogous to a :code:`make` file
 - a :code:`build` folder, that holds some log files
-- a :code:`dist` folder, that holds the main executable :code:`script`, and some dependent Python libraries,
+- a :code:`dist` folder, that holds the main executable :code:`script`, and some dependent Python libraries
 
 all in the same folder as :code:`script.py`. PyInstaller puts all the Python libraries used in :code:`script.py` into the :code:`dist` folder, so when distributing the executable, distribute the whole :code:`dist` folder.
 
-The :code:`script.spec` file can be edited to `customise the build <http://pythonhosted.org/PyInstaller/#spec-file-operation>`_, with options such as
+The :code:`script.spec` file can be edited to `customise the build <http://pythonhosted.org/PyInstaller/#spec-file-operation>`_, with options such as:
 
 - bundling data files with the executable
 - including run-time libraries (:code:`.dll` or :code:`.so` files) that PyInstaller can't infer automatically
-- adding Python run-time options to the executable,
+- adding Python run-time options to the executable
 
 Now :code:`script.spec` can be run with :code:`pyinstaller` (instead of using :code:`script.py` again):
 
@@ -196,7 +203,7 @@ Now :code:`script.spec` can be run with :code:`pyinstaller` (instead of using :c
 
   $ pyinstaller script.spec
 
-To create a standalone windowed OS X application, use the :code:`--windowed` option
+To create a standalone windowed OS X application, use the :code:`--windowed` option:
 
 .. code-block:: console
 
@@ -207,8 +214,9 @@ This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use G
 There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option.
 
 
+*****
 Linux
------
+*****
 
 
 bbFreeze

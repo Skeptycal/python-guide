@@ -1,5 +1,8 @@
+
+
+#######
 Logging
-=======
+#######
 
 .. image:: /_static/photos/35254379756_c9fe23f843_k_d.jpg
 
@@ -17,8 +20,9 @@ Logging serves two purposes:
   reports or to optimize a business goal.
 
 
+*************
 ... or Print?
--------------
+*************
 
 The only time that ``print`` is a better option than logging is when
 the goal is to display a help statement for a command line application.
@@ -34,8 +38,9 @@ Other reasons why logging is better than ``print``:
   :attr:`logging.Logger.disabled` to ``True``.
 
 
+********************
 Logging in a Library
---------------------
+********************
 
 Notes for `configuring logging for a library`_ are in the
 `logging tutorial`_.  Because the *user*, not the library, should
@@ -53,7 +58,7 @@ hierarchy of loggers using dot notation, so using ``__name__`` ensures
 no name collisions.
 
 Here is an example of best practice from the `requests source`_ -- place
-this in your ``__init__.py``
+this in your ``__init__.py``:
 
 .. code-block:: python
 
@@ -61,12 +66,13 @@ this in your ``__init__.py``
     logging.getLogger(__name__).addHandler(logging.NullHandler())
 
 
+*************************
 Logging in an Application
--------------------------
+*************************
 
-The `twelve factor app <http://12factor.net>`_, an authoritative reference
+The `twelve factor app <https://12factor.net>`_, an authoritative reference
 for good practice in application development, contains a section on
-`logging best practice <http://12factor.net/logs>`_. It emphatically
+`logging best practice <https://12factor.net/logs>`_. It emphatically
 advocates for treating log events as an event stream, and for
 sending that event stream to standard output to be handled by the
 application environment.
@@ -77,7 +83,7 @@ There are at least three ways to configure a logger:
 - Using an INI-formatted file:
     - **Pro**: possible to update configuration while running using the
       function :func:`logging.config.listen` to listen on a socket.
-    - **Con**: less control (*e.g.* custom subclassed filters or loggers)
+    - **Con**: less control (e.g. custom subclassed filters or loggers)
       than possible when configuring a logger in code.
 - Using a dictionary or a JSON-formatted file:
     - **Pro**: in addition to updating while running, it is possible to load
@@ -186,9 +192,9 @@ Example Configuration Directly in Code
     logger.debug('often makes a very good meal of %s', 'visiting tourists')
 
 
-.. _basic logging tutorial: http://docs.python.org/howto/logging.html#logging-basic-tutorial
-.. _logging configuration: https://docs.python.org/howto/logging.html#configuring-logging
-.. _logging tutorial: http://docs.python.org/howto/logging.html
-.. _configuring logging for a library: https://docs.python.org/howto/logging.html#configuring-logging-for-a-library
-.. _log record: https://docs.python.org/library/logging.html#logrecord-attributes
+.. _basic logging tutorial: http://docs.python.org/3/howto/logging.html#logging-basic-tutorial
+.. _logging configuration: https://docs.python.org/3/howto/logging.html#configuring-logging
+.. _logging tutorial: http://docs.python.org/3/howto/logging.html
+.. _configuring logging for a library: https://docs.python.org/3/howto/logging.html#configuring-logging-for-a-library
+.. _log record: https://docs.python.org/3/library/logging.html#logrecord-attributes
 .. _requests source: https://github.com/kennethreitz/requests

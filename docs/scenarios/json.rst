@@ -1,5 +1,7 @@
+
+####
 JSON
-====
+####
 
 .. image:: /_static/photos/33928819683_97b5c6a184_k_d.jpg
 
@@ -7,8 +9,10 @@ The `json <https://docs.python.org/2/library/json.html>`_ library can parse
 JSON from strings or files. The library parses JSON into a Python dictionary
 or list. It can also convert Python dictionaries or lists into JSON strings.
 
+
+************
 Parsing JSON
-------------
+************
 
 Take the following string containing JSON data:
 
@@ -44,10 +48,11 @@ You can also convert the following to JSON:
     '{"first_name": "Guido", "last_name": "Rossum", "titles": ["BDFL", "Developer"]}'
 
 
+**********
 simplejson
-----------
+**********
 
-The JSON library was added to Python in version 2.6.
+The json library was added to Python in version 2.6.
 If you're using an earlier version of Python, the
 `simplejson <https://simplejson.readthedocs.io/en/latest/>`_ library is
 available via PyPI.
@@ -63,5 +68,5 @@ importing simplejson under a different name:
 
     import simplejson as json
 
-After importing simplejson as json, the above examples will all work as if you
+After importing simplejson as `json`, the above examples will all work as if you
 were using the standard json library.

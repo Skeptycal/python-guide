@@ -1,5 +1,8 @@
+
+
+##############
 Common Gotchas
-==============
+##############
 
 .. image:: /_static/photos/34435688380_b5a740762b_k_d.jpg
 
@@ -16,8 +19,10 @@ the surprise.
 
 .. _default_args:
 
+
+*************************
 Mutable Default Arguments
--------------------------
+*************************
 
 Seemingly the *most* common surprise new Python programmers encounter is
 Python's treatment of mutable default arguments in function definitions.
@@ -88,8 +93,9 @@ to maintain state between calls of a function. This is often done when writing
 a caching function.
 
 
+****************************
 Late Binding Closures
----------------------
+****************************
 
 Another common source of confusion is the way Python binds its variables in
 closures (or in the surrounding global scope).
@@ -189,9 +195,9 @@ lots of situations. Looping to create unique functions is unfortunately a case
 where they can cause hiccups.
 
 
-
+*********************************
 Bytecode (.pyc) Files Everywhere!
----------------------------------
+*********************************
 
 By default, when executing Python code from files, the Python interpreter
 will automatically write a bytecode version of that file to disk, e.g.
@@ -199,7 +205,7 @@ will automatically write a bytecode version of that file to disk, e.g.
 
 These ``.pyc`` files should not be checked into your source code repositories.
 
-Theoretically, this behavior is on by default, for performance reasons.
+Theoretically, this behavior is on by default for performance reasons.
 Without these bytecode files present, Python would re-generate the bytecode
 every time the file is loaded.
 

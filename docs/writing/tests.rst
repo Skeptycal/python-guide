@@ -1,5 +1,8 @@
+
+
+#################
 Testing Your Code
-=================
+#################
 
 .. image:: /_static/photos/34435687940_8f73fc1fa6_k_d.jpg
 
@@ -71,11 +74,14 @@ Some general rules of testing:
   be to add a test to ensure that the new functionality is not already a
   working path that has not been plugged into the interface.
 
+
+
+**********
 The Basics
-::::::::::
+**********
 
 
-Unittest
+unittest
 --------
 
 :mod:`unittest` is the batteries-included test module in the Python standard
@@ -136,8 +142,10 @@ When running this module from the command line as in ``python module.py``, the
 doctests will run and complain if anything is not behaving as described in the
 docstrings.
 
+
+*****
 Tools
-:::::
+*****
 
 
 py.test
@@ -162,7 +170,7 @@ functions:
     def test_answer():
         assert func(3) == 5
 
-and then running the `py.test` command
+and then running the `py.test` command:
 
 .. code-block:: console
 
@@ -217,7 +225,7 @@ minimal example of each bug (distinguished exception type and location):
         xs=[1.7976321109618856e+308, 6.102390043022755e+303]
     )
 
-Hypothesis is practical as well as very powerful, and will often find bugs
+Hypothesis is practical as well as very powerful and will often find bugs
 that escaped all other forms of testing.  It integrates well with py.test,
 and has a strong focus on usability in both simple and advanced scenarios.
 
@@ -228,14 +236,14 @@ tox
 ---
 
 tox is a tool for automating test environment management and testing against
-multiple interpreter configurations
+multiple interpreter configurations.
 
 .. code-block:: console
 
     $ pip install tox
 
 tox allows you to configure complicated multi-parameter test matrices via a
-simple ini-style configuration file.
+simple INI-style configuration file.
 
     `tox <https://tox.readthedocs.io/en/latest/>`_
 
@@ -246,7 +254,7 @@ Unittest2
 unittest2 is a backport of Python 2.7's unittest module which has an improved
 API and better assertions over the one available in previous versions of Python.
 
-If you're using Python 2.6 or below, you can install it with pip
+If you're using Python 2.6 or below, you can install it with pip:
 
 .. code-block:: console
 
@@ -266,7 +274,7 @@ This way if you ever switch to a newer Python version and no longer need the
 unittest2 module, you can simply change the import in your test module without
 the need to change any other code.
 
-    `unittest2 <http://pypi.python.org/pypi/unittest2>`_
+    `unittest2 <http://pypi.org/project/unittest2>`_
 
 
 mock
@@ -318,4 +326,3 @@ always returns the same result (but only for the duration of the test).
 Mock has many other ways you can configure it and control its behavior.
 
     `mock <http://www.voidspace.org.uk/python/mock/>`_
-

@@ -1,5 +1,7 @@
 docs/_build
 .idea
+.gitignore
+readme.md
 
 # Ignore irrelevant files from the Sublime Text editor
 *.sublime-workspace
