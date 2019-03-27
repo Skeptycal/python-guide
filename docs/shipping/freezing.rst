@@ -14,10 +14,10 @@ Python interpreter.
 Applications such as 'Dropbox', 'Eve Online',  'Civilization IV', and
 BitTorrent clients do this.
 
-The advantage of distributing this way is that your application will "just work",
-even if the user doesn't already have the required version of Python (or any)
-installed. On Windows, and even on many Linux distributions and OS X, the right
-version of Python will not already be installed.
+The advantage of distributing this way is that your application will "just
+work," even if the user doesn't already have the required version of
+Python (or any) installed. On Windows, and even on macOS many Linux
+distributions , the right version of Python will not already be installed.
 
 Besides, end-user software should always be in an executable format. Files
 ending in ``.py`` are for software engineers and system administrators.
@@ -48,15 +48,15 @@ Comparison of Freezing Tools
 
 Solutions and platforms/features supported:
 
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-Solution    Windows Linux OS X Python 3 License One-file mode Zipfile import Eggs pkg_resources support
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
-bbFreeze    yes     yes   yes  no       MIT     no            yes            yes  yes
-py2exe      yes     no    no   yes      MIT     yes           yes            no   no
-pyInstaller yes     yes   yes  yes      GPL     yes           no             yes  no
-cx_Freeze   yes     yes   yes  yes      PSF     no            yes            yes  no
-py2app      no      no    yes  yes      MIT     no            yes            yes  yes
-=========== ======= ===== ==== ======== ======= ============= ============== ==== =====================
+=========== ======= ===== ===== ======== ======= ============= ============== ==== =====================
+Solution    Windows Linux macOS Python 3 License One-file mode Zipfile import Eggs pkg_resources support
+=========== ======= ===== ===== ======== ======= ============= ============== ==== =====================
+bbFreeze    yes     yes   yes   no       MIT     no            yes            yes  yes
+py2exe      yes     no    no    yes      MIT     yes           yes            no   no
+pyInstaller yes     yes   yes   yes      GPL     yes           no             yes  no
+cx_Freeze   yes     yes   yes   yes      PSF     no            yes            yes  no
+py2app      no      no    yes   yes      MIT     no            yes            yes  yes
+=========== ======= ===== ===== ======== ======= ============= ============== ==== =====================
 
 .. note::
     Freezing Python code on Linux into a Windows executable was only once
@@ -76,7 +76,8 @@ Windows
 bbFreeze
 ~~~~~~~~
 
-Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
+Prerequisite is to install \
+:ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
 1. Install :code:`bbfreeze`:
 
@@ -109,9 +110,10 @@ Prerequisite is to install :ref:`Python, Setuptools and pywin32 dependency on Wi
 
     freezer.setIcon('my_awesome_icon.ico')
 
-4. Provide the Microsoft Visual C++ runtime DLL for the freezer. It might be possible to append your :code:`sys.path`
-with the Microsoft Visual Studio path but I find it easier to drop :file:`msvcp90.dll` in the same folder where your script
-resides.
+4. Provide the Microsoft Visual C++ runtime DLL for the freezer. It might be
+possible to appendyour :code:`sys.path` with the Microsoft Visual Studio path
+but I find it easier to drop :file:`msvcp90.dll` in the same folder where your
+script resides.
 
 5. Freeze!
 
@@ -122,7 +124,8 @@ resides.
 py2exe
 ~~~~~~
 
-Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last release of py2exe is from the year 2014. There is not active development.
+Prerequisite is to install :ref:`Python on Windows <install-windows>`. The
+last release of py2exe is from the year 2014. There is not active development.
 
 1. Download and install http://sourceforge.net/projects/py2exe/files/py2exe/
 
@@ -152,15 +155,16 @@ Prerequisite is to install :ref:`Python on Windows <install-windows>`. The last 
 PyInstaller
 ~~~~~~~~~~~
 
-Prerequisite is to have installed :ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
+Prerequisite is to have installed\
+:ref:`Python, Setuptools and pywin32 dependency on Windows <install-windows>`.
 
 - `Most basic tutorial <http://bojan-komazec.blogspot.com/2011/08/how-to-create-windows-executable-from.html>`_
 - `Manual <https://pyinstaller.readthedocs.io/en/stable/>`_
 
 
-****
-OS X
-****
+*****
+macOS
+*****
 
 
 py2app
@@ -169,7 +173,8 @@ py2app
 PyInstaller
 ~~~~~~~~~~~
 
-PyInstaller can be used to build Unix executables and windowed apps on Mac OS X 10.6 (Snow Leopard) or newer.
+PyInstaller can be used to build Unix executables and windowed apps on macOS
+10.6 (Snow Leopard) or newer.
 
 To install PyInstaller, use pip:
 
@@ -187,7 +192,8 @@ This creates:
 
 - a :code:`script.spec` file, analogous to a :code:`make` file
 - a :code:`build` folder, that holds some log files
-- a :code:`dist` folder, that holds the main executable :code:`script`, and some dependent Python libraries
+- a :code:`dist` folder, that holds the main executable :code:`script`,
+and some dependent Python libraries
 
 all in the same folder as :code:`script.py`. PyInstaller puts all the Python libraries used in :code:`script.py` into the :code:`dist` folder, so when distributing the executable, distribute the whole :code:`dist` folder.
 
@@ -203,7 +209,7 @@ Now :code:`script.spec` can be run with :code:`pyinstaller` (instead of using :c
 
   $ pyinstaller script.spec
 
-To create a standalone windowed OS X application, use the :code:`--windowed` option:
+To create a standalone windowed macOS application, use the :code:`--windowed` option:
 
 .. code-block:: console
 
@@ -211,7 +217,7 @@ To create a standalone windowed OS X application, use the :code:`--windowed` opt
 
 This creates a :code:`script.app` in the :code:`dist` folder. Make sure to use GUI packages in your Python code, like `PyQt <https://riverbankcomputing.com/software/pyqt/intro>`_ or `PySide <http://wiki.qt.io/About-PySide>`_, to control the graphical parts of the app.
 
-There are several options in :code:`script.spec` related to Mac OS X app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option.
+There are several options in :code:`script.spec` related to macOS app bundles `here <http://pythonhosted.org/PyInstaller/spec-files.html#spec-file-options-for-a-mac-os-x-bundle>`_. For example, to specify an icon for the app, use the :code:`icon=\path\to\icon.icns` option.
 
 
 *****
