@@ -125,19 +125,25 @@ prerequisite for this is that you have an Amazon AWS account with an S3 bucket.
 
 3. **Follow pip2pi README for pip2tgz and dir2pi commands**
 
-* :code:`pip2tgz packages/ YourPackage` (or :code:`pip2tgz packages/ -r requirements.txt`)
+* :code:`pip2tgz packages/ YourPackage` (or
+    :code:`pip2tgz packages/ -r requirements.txt`)
 * :code:`dir2pi packages/`
 
 4. **Upload the new files**
 
-* Use a client like Cyberduck to sync the entire :file:`packages` folder to your s3 bucket.
-* Make sure you upload :code:`packages/simple/index.html` as well as all new files and directories.
+* Use a client like Cyberduck to sync the entire :file:`packages`
+    folder to your s3 bucket.
+* Make sure you upload :code:`packages/simple/index.html` as well
+    as all new files and directories.
 
 5. **Fix new file permissions**
 
-* By default, when you upload new files to the S3 bucket, they will have the wrong permissions set.
-* Use the Amazon web console to set the READ permission of the files to EVERYONE.
-* If you get HTTP 403 when trying to install a package, make sure you've set the permissions correctly.
+* By default, when you upload new files to the S3 bucket, they will
+    have the wrong permissions set.
+* Use the Amazon web console to set the READ permission of the
+    files to EVERYONE.
+* If you get HTTP 403 when trying to install a package, make sure
+    you've set the permissions correctly.
 
 6. **All done**
 
